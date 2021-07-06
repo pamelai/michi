@@ -1,0 +1,643 @@
+/*----------- GENERAL -----------*/
+@font-face {
+    font-family: 'm';
+    src: url('../types/montserrat-regular-webfont.eot');
+    src: url('../types/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../types/montserrat-regular-webfont.woff2') format('woff2'),
+    url('../types/montserrat-regular-webfont.woff') format('woff'),
+    url('../types/montserrat-regular-webfont.ttf') format('truetype'),
+    url('../types/montserrat-regular-webfont.svg#m') format('svg');
+}
+
+@font-face {
+    font-family: 'ms';
+    src: url('../types/montserrat-semibold-webfont.eot');
+    src: url('../types/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../types/montserrat-semibold-webfont.woff2') format('woff2'),
+    url('../types/montserrat-semibold-webfont.woff') format('woff'),
+    url('../types/montserrat-semibold-webfont.ttf') format('truetype'),
+    url('../types/montserrat-semibold-webfont.svg#ms') format('svg');
+}
+
+* {
+    font-family: 'm', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.25;
+    list-style: none;
+}
+
+main {
+    min-height: calc(100vh - 30px);
+}
+
+[class*=michired] {
+    background-color: #E02D3C;
+    color: white;
+}
+
+[class*=michiyellow] {
+    color: #ffffff;
+}
+
+.btn.michired.michiyellow {
+    border: 1px #E02D3C solid;
+    border-radius: 0 0 15px 15px;
+    font-family: 'ms';
+    letter-spacing: 0.5px;
+    width: 200px;
+    transition: .2s linear;
+    height: 38px;
+}
+
+.mercadopago-button {
+    font-size: 1em !important;
+    border: 1px #E02D3C solid !important;
+    border-radius: 0 0 15px 15px !important;
+    font-family: 'ms' !important;
+    background-color: #E02D3C !important;
+    color: white !important;
+    line-height: 0 !important;
+    letter-spacing: 0.5px;
+    width: 200px;
+    transition: .2s linear;
+    height: 38px;
+    display: none;
+}
+
+.btn.michired.michiyellow:active {
+    background-color: transparent;
+    color: #E02D3C;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+textarea {
+    resize: none;
+}
+
+.alert.position-fixed {
+    z-index: 2;
+    right: 15px;
+}
+
+#msj-gral {
+    z-index: 10;
+}
+
+
+/*------------------ HEADER ------------------*/
+#logo a {
+    font-size: 0;
+}
+
+#logo a {
+    background: url('../img/logo.png') no-repeat;
+    height: 45px;
+    width: 49px;
+}
+
+.navbar {
+    background-image: url("../img/fondo-logo.png");
+    background-repeat: no-repeat;
+    box-shadow: 0px 3px 7px 0px rgba(117, 117, 117, 1);
+    z-index: 2;
+}
+
+.fas.fa-shopping-cart,
+.fas.fa-user {
+    font-size: 1.2em;
+}
+
+/*------------------ FOOTER ------------------*/
+footer > :first-child a {
+    background: url('../img/redes.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    font-size: 0;
+    display: block;
+}
+
+footer > :first-child a[href*="twitter"] {
+    background-position: -30px 0;
+}
+
+footer > :first-child a[href*="facebook"] {
+    background-position: 0 0;
+}
+
+footer > :first-child a[href*="instagram"] {
+    background-position: -60px 0;
+}
+
+footer > :first-child a[href*="twitter"]:active {
+    background-position: -30px 30px;
+}
+
+footer > :first-child a[href*="facebook"]:active {
+    background-position: 0 30px;
+}
+
+footer > :first-child a[href*="instagram"]:active {
+    background-position: -60px 30px;
+}
+
+footer > :last-child li {
+    font-size: 0.8em;
+}
+
+
+/*------------------ HOME ------------------*/
+#banner,
+.encabezado {
+    background-size: cover !important;
+}
+
+#banner {
+    height: calc(100vh - 61px);
+    background: url('../img/banner0.jpg') no-repeat center 12%;
+    max-width: calc(100% * 1.2);
+}
+
+.onda {
+    background: url('../img/transicion.png');
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+}
+
+#banner p,
+#banner p > span {
+    color: white;
+}
+
+#banner p {
+    font-family: 'ms';
+    font-size: 1.8em;
+    width: max-content;
+    top: 10px;
+    right: calc(50vw - 162.89px);
+    text-align: center;
+}
+
+#banner p span {
+    font-size: 1em;
+    font-family: 'ms';
+}
+
+#banner p span .michired {
+    border-radius: 0 0 15px 15px;
+}
+
+
+#home h2 {
+    font-size: 1.7em;
+    color: #E02D3C;
+    font-family: 'ms';
+    font-weight: bold;
+    text-align: center;
+}
+
+p.text-muted {
+    font-size: 0.7em;
+}
+
+#home > :last-child li i {
+    color: #E02D3C;
+    font-size: 2.5em;
+}
+
+#home > :last-child li span {
+    font-family: 'ms';
+}
+
+#home .producto > a:first-of-type i {
+    top: 190px
+}
+
+
+/*------------------ PRODUCTOS ------------------*/
+.encabezado {
+    background: url('../img/encabezadogral.jpg') no-repeat center center;
+    background-size: cover;
+    max-width: calc(100% * 2.56px);
+    height: 400px;
+}
+
+.encabezado h2 {
+    top: calc(50% - 19px);
+    font-family: 'ms';
+    left: 45px;
+}
+
+.producto {
+    border: 1px solid #E02D3C;
+    border-radius: 15px;
+}
+
+.producto a {
+    text-decoration: none;
+}
+
+.producto > a:first-of-type > :first-child {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transition: .2s linear;
+    z-index: 2;
+}
+
+.producto > a:first-of-type:active > :first-child {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.producto > a:first-of-type p {
+    color: black;
+    font-family: 'ms';
+}
+
+.producto > a:first-of-type i {
+    font-size: 1.8em;
+    top: 225px;
+    right: 6px;
+    color: #E02D3C;
+    z-index: 3;
+}
+
+
+.producto form input,
+#detalle-prod form input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+
+}
+
+
+/*------------------ DETALLE ------------------*/
+#detalle-prod ul li span {
+    color: #E02D3C;
+    font-family: 'ms';
+}
+
+#detalle-prod ul > :last-child {
+    font-size: 1.8em;
+    font-family: 'ms';
+}
+
+#detalle-prod a,
+#form-prod > a,
+.volver,
+#detalle-prod a:active,
+#form-prod > a:active,
+.volver:active,
+.volver:hover {
+    color: #E02D3C;
+}
+
+
+/*------------------ LOGIN ------------------*/
+#login {
+    min-height: calc(100vh - 30px);
+}
+
+#login h2,
+#panel h2,
+#form-prod h2,
+.pedidos h2,
+.estaditicas h2,
+#checkout h2,
+#usuario-editar h2,
+#perfil h3 {
+    color: #E02D3C;
+    font-family: 'ms';
+}
+
+#login small a {
+    color: #E02D3C;
+    font-size: inherit;
+}
+
+#login .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #E02D3C;
+    background-color: #E02D3C;
+}
+
+/*------------------ PANEL ------------------*/
+#panel .nav-link.active {
+    font-family: 'ms';
+    color: #E02D3C;
+}
+
+#panel .nav-link {
+    color: black;
+}
+
+#panel table .btn.michired.michiyellow {
+    width: auto;
+}
+
+#panel table .dropdown-item a {
+    color: black;
+    transition: .2s linear;
+}
+
+#panel table .dropdown-item a:active {
+    color: #E02D3C;
+}
+
+
+/*------------------ CARRITO ------------------*/
+#carrito {
+    min-height: 70vh;
+}
+
+#carrito .producto > a:first-of-type i {
+    right: 20px;
+}
+
+#carrito .producto > form {
+    top: 15px;
+    right: 15px;
+    z-index: 3;
+}
+
+#carrito .producto > form button {
+    border: none;
+    background: none;
+}
+
+#carrito .producto > form i {
+    font-size: 1.8em;
+    color: #E02D3C;
+}
+
+#carrito .producto > ul form i {
+    color: #E02D3C;
+    font-size: 1.4em;
+}
+
+#carrito .producto > ul > :last-child {
+    font-size: 1.1em;
+}
+
+#listado-completo > ul + p {
+    font-size: 1.2em;
+    border-top: 1px solid #E02D3C;
+}
+
+#carrito-vacio {
+    font-size: 1.5em;
+}
+
+#listado-completo > div > form button {
+    background: none;
+    border: none;
+}
+
+
+/*------------------ PEDIDO ------------------*/
+.pedidos.usuario h3 {
+    font-size: 1.5em;
+}
+
+.pedidos h4,
+.pedidos h3 {
+    font-size: 1.2em;
+}
+
+.pedidos .card {
+    border: none;
+    border-radius: 0;
+}
+
+.pedidos .card:not(:first-child),
+.pedidos > ul > li:not(:first-child) {
+    border-top: 1px solid #E02D3C;
+    padding-top: 0.5rem;
+}
+
+.pedidos .card a {
+    color: black;
+}
+
+.pedidos > ul > li > div {
+    right: 0;
+    top: 24px;
+    z-index: 5;
+}
+
+.pedidos > ul li > div > button {
+    border: none;
+    background: none;
+}
+
+.pedidos ul li > div i {
+    font-size: 1.2em;
+}
+
+.pedidos ul.row.justify-content-md-between.justify-content-lg-around{
+    height: 100%;
+}
+
+/*------------------ PERFIL-EDITAR ------------------*/
+.imagen span {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 0;
+}
+
+.imagen i {
+    color: white;
+    font-size: 1.3em;
+    right: 20px;
+    bottom: 20px;
+}
+
+
+/*------------------ PANEL-FORM USUARIO ------------------*/
+#usuario-editar h2,
+.estaditicas h2 {
+    font-size: 1.7em;
+}
+
+.drop-hover form button:hover,
+.pedidos .dropdown-menu form button:hover{
+    color: #E02D3C
+
+}
+
+
+/*------------------ PERFIL USUARIO ------------------*/
+#perfil h3 {
+    font-size: 1.3em;
+}
+
+
+/*------------------ PANEL-FORM PRODUCTO ------------------*/
+#img_producto {
+    max-width: 500px;
+}
+
+
+/*------------------ ESTADÍSTICAS ------------------*/
+#topProductos,
+#pedidos-zona,
+#pedidos-fechas,
+#pedidos-entregados {
+    width: 100%;
+}
+
+a.filtro{
+    color: #E02D3C;
+    border-bottom: 1px solid #E02D3C;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    /*------------------ HOME ------------------*/
+    #banner {
+        height: calc(100vh - 61px);
+        background: url('../img/banner.jpg') no-repeat center center;
+        max-width: calc(100% * 1.333333333333333);
+    }
+
+    #banner p {
+        right: 20px;
+        top: calc((50vh - 60px) - 35px);
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /*------------------ HOME ------------------*/
+    #home .producto > a:first-of-type i {
+        top: 178px
+    }
+
+    /*------------------ PRODUCTOS ------------------*/
+    .producto > a:first-of-type i {
+        top: 207px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .btn.michired.michiyellow:hover {
+        background-color: transparent;
+        color: #E02D3C;
+    }
+
+    .producto > :first-child:hover > :first-child {
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    /*------------------ HOME ------------------*/
+    #banner p {
+        font-size: 2.5em;
+    }
+
+    #banner p span {
+        font-size: 1em;
+    }
+
+    #banner {
+        background: url('../img/banner2.jpg') no-repeat center center;
+        max-width: calc(100% * 1.778645833333333‬);
+    }
+
+    #home .producto > a:first-of-type i {
+        top: 175px
+    }
+
+    #home > :first-child > div > :first-child {
+        background: url('../img/sobrenosotros.jpg') no-repeat center center;
+        background-size: cover;
+        height: 400px;
+    }
+
+    #home > :first-child > div > :first-child div {
+        background: url('../img/transicion-sobrenosotros.png') no-repeat center center;
+        height: 400px;
+        width: 12px;
+        right: -1px;
+        top: 0;
+
+    }
+
+    /*------------------ PRODUCTOS ------------------*/
+    .producto > a:first-of-type i {
+        top: 160px;
+    }
+
+    .encabezado {
+        background: url('../img/encabezadogral2.jpg') no-repeat center center;
+        max-width: calc(100% * 2.276666666666667‬px);
+    }
+
+    /*------------------ PANEL-PEDIDO ------------------*/
+    .pedidos .card:not(:first-child) {
+        border: none;
+    }
+
+    /*------------------ PANEL-PEDIDO ------------------*/
+    footer > :first-child a[href*="twitter"]:hover {
+        background-position: -30px -30px;
+    }
+
+    footer > :first-child a[href*="facebook"]:hover {
+        background-position: 0 -30px;
+    }
+
+    footer > :first-child a[href*="instagram"]:hover {
+        background-position: -60px -30px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    /*------------------ PRODUCTOS ------------------*/
+    .producto > a:first-of-type i {
+        top: 190px;
+    }
+
+
+    .pedidos .card:not(:first-child), .pedidos > ul > li:not(:first-child) {
+        border: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
